@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import logoLight from "../assets/img/logos/logo-wideedu-putih-header.png";
-import logoDark from "../assets/img/logos/logo-wideedu-header.png";
+import logoLight from "../assets/img/logos/backgputih. pt batu.png";
+import logoDark from "../assets/img/logos/logo_batu_bara.png";
 import { Link, useLocation } from "react-router-dom";
 import "boxicons";
 
