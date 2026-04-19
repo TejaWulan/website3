@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5a7cf3a3.css",
+    "main.js": "/static/js/main.25bd7b41.js",
+    "static/media/banner3.jpg": "/static/media/banner3.3254553658594356a1aa.jpg",
+    "static/media/MicrosoftTeams-image (62) (2).png": "/static/media/MicrosoftTeams-image (62) (2).7eeb4a6f185a5ef11dfb.png",
+    "static/media/Our Products_Banner Image.png": "/static/media/Our Products_Banner Image.dc123337ec4de34754e5.png",
+    "static/media/bulat_banner.png": "/static/media/bulat_banner.509c143199b360e608b6.png",
+    "static/media/Software Engineering.png": "/static/media/Software Engineering.c2f1fef11b0610eff0fa.png",
+    "static/media/banner11.png": "/static/media/banner11.d479b721eb662b24de47.png",
+    "static/media/Frontend Developer.png": "/static/media/Frontend Developer.7c2009e6d0f5e7ab0513.png",
+    "static/media/Java Bootcamp.png": "/static/media/Java Bootcamp.752fa003dc46fcfc9eca.png",
+    "static/media/logo_batu_bara.png": "/static/media/logo_batu_bara.f4f10d0f05816626046d.png",
+    "static/media/Data Engineer.png": "/static/media/Data Engineer.8edb183b9f9c202624a4.png",
+    "static/media/Asset 4@2x 1.webp": "/static/media/Asset 4@2x 1.535b002fdad8272518bc.webp",
+    "static/media/ELECTIVE COURSE.png": "/static/media/ELECTIVE COURSE.192a9d01217b499aa924.png",
+    "static/media/whatsapp.png": "/static/media/whatsapp.e43faf39dd93ddbee54b.png",
+    "static/media/Professional Development.png": "/static/media/Professional Development.753e53c4f0aba83c5685.png",
+    "static/media/ENRICHMENT COURSE.png": "/static/media/ENRICHMENT COURSE.734135bc1049ea4099b6.png",
+    "static/media/Business Growth.png": "/static/media/Business Growth.5c48f3e861f2503be04b.png",
+    "static/media/Backend Developer.png": "/static/media/Backend Developer.9b7e0891b4fcc893f0c6.png",
+    "static/media/popup.png": "/static/media/popup.cb1588142306881ec475.png",
+    "static/media/Nikel-1.jpeg": "/static/media/Nikel-1.0970beeca3e1f7eca53d.jpeg",
+    "static/media/IT Support.png": "/static/media/IT Support.8cc23e11939fa6e3bcd9.png",
+    "static/media/gallery1.png": "/static/media/gallery1.d987c812382a617d541a.png",
+    "static/media/gallery3.jpg": "/static/media/gallery3.fee1c1b7aa589da6005d.jpg",
+    "static/media/Asset 2@2x 1.webp": "/static/media/Asset 2@2x 1.19b074cf0eb73748a489.webp",
+    "static/media/rekind.png": "/static/media/rekind.7edc5edd6dd0aa351e9f.png",
+    "static/media/kaldera.png": "/static/media/kaldera.2b391ec7636c9fe52414.png",
+    "static/media/Asset 2@2x 2 (1).webp": "/static/media/Asset 2@2x 2 (1).18466e9e119116392f49.webp",
+    "index.html": "/index.html",
+    "main.5a7cf3a3.css.map": "/static/css/main.5a7cf3a3.css.map",
+    "main.25bd7b41.js.map": "/static/js/main.25bd7b41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a7cf3a3.css",
+    "static/js/main.25bd7b41.js"
+  ]
+}
