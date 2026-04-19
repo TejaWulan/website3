@@ -1,58 +1,84 @@
-import React from "react";
-//image section
-import DigitalTalentProgram from "../../assets/img/home/Digital Talent Bootcamp (1.1).png";
-import TalentHiringPartnerships from "../../assets/img/home/Talent Hiring Partnership(1.1).png";
-import LNDSolutions  from "../../assets//img/home/Coorporate L&D Solutions (1.1).png";
+import React, { useEffect, useState } from "react";
+import Kaldera from "../../assets/img/home/kaldera.png";
+import Rekind from "../../assets/img/home/rekind.png";
 
-import { Link } from "react-router-dom";
+function Partner() {
+  const data = [
+    { img: Kaldera, title: "PT KALDERA COAL SUPPLIER" },
+    { img: Rekind, title: "PT REKIND DAYA MAMUJU" },
+    { img: Kaldera, title: "PARTNER 3" },
+    { img: Rekind, title: "PARTNER 4" },
+  ];
 
-function Products() {
+  const extendedData = [...data, ...data];
+  const [current, setCurrent] = useState(0);
+
+  // AUTO SLIDE
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => prev + 1);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // reset infinite
+  useEffect(() => {
+    if (current >= data.length) {
+      setTimeout(() => setCurrent(0), 700);
+    }
+  }, [current]);
+
   return (
-    <div className="mt-10">
-      <div className="text-center f-1 text-teal-600 text-3xl md:text-[50px] font-extrabold leading-[65.10px]">
-        <Link to="/product" className="hover:text-[#0D2F69]">
-          Our Products
-        </Link>
-      </div>
-      <div className="images p-5 md:p-10 flex flex-col lg:flex-row justify-evenly">
-        <div className="my-3 md:my-5 w-[100%] lg:w-[30%] flex flex-col items-center">
-          <div className="p-2 bg-white rounded-full shadow-lg">
-            <img
-              src={DigitalTalentProgram}
-              alt=""
-              className="h-[200px] rounded-full"
-            />
-          </div>
-          <h1 className="text-center text-xl md:text-3xl font-1 font-[1000] mt-3 c-2 md:max-w-[50%]">
-            THE DIGITAL TALENT BOOTCAMP 
-          </h1>
+    <div className="mt-10 py-16 bg-gray-100 relative">
+
+      {/* TITLE */}
+      <h1 className="text-center text-3xl md:text-5xl font-extrabold text-teal-600 mb-10">
+        Our Partners
+      </h1>
+
+      {/* PANAH DI BACKGROUND */}
+      <button
+        onClick={() => setCurrent((prev) => prev - 1)}
+        className="absolute left-6 md:left-16 top-1/2 -translate-y-1/2 z-20 bg-orange-500 hover:bg-orange-600 text-white p-3 rounded-full shadow-lg"
+      >
+        ❮
+      </button>
+
+      <button
+        onClick={() => setCurrent((prev) => prev + 1)}
+        className="absolute right-6 md:right-16 top-1/2 -translate-y-1/2 z-20 bg-orange-500 hover:bg-orange-600 text-white p-3 rounded-full shadow-lg"
+      >
+        ❯
+      </button>
+
+      {/* SLIDER */}
+      <div className="max-w-3xl mx-auto overflow-hidden">
+
+        <div
+          className="flex transition-transform duration-700 ease-in-out"
+          style={{
+            transform: `translateX(-${current * 50}%)`,
+          }}
+        >
+          {extendedData.map((item, index) => (
+            <div key={index} className="w-1/2 flex-shrink-0 p-4">
+              <div className="bg-white shadow-lg rounded-lg p-6 text-center h-full hover:shadow-xl transition">
+                <img
+                  src={item.img}
+                  alt=""
+                  className="h-[120px] mx-auto mb-4"
+                />
+                <h2 className="text-sm md:text-lg font-bold">
+                  {item.title}
+                </h2>
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="my-3 md:my-5 w-[100%] lg:w-[30%] flex flex-col items-center">
-          <div className="p-2 bg-white rounded-full shadow-lg">
-            <img
-              src={TalentHiringPartnerships}
-              alt=""
-              className="h-[200px] rounded-full"
-            />
-          </div>
-          <h1 className="text-center text-xl md:text-3xl font-1 font-[1000] mt-3 c-2 md:max-w-[50%]">
-            TALENT HIRING PARTNERSHIP
-          </h1>
-        </div>
-        <div className="my-3 md:my-5 w-[100%] lg:w-[30%]  flex flex-col items-center">
-          <div className="p-2 bg-white rounded-full shadow-lg">
-            <img
-              src={LNDSolutions}
-              alt=""
-              className="h-[200px] rounded-full"
-            />
-          </div>
-          <h1 className="text-center text-xl md:text-3xl font-1 font-[1000] mt-3 c-2 md:max-w-[50%]">
-            CORPORATE L&D SOLUTIONS 
-          </h1>
-        </div>
+
       </div>
     </div>
   );
 }
-export default Products;
+
+export default Partner;
