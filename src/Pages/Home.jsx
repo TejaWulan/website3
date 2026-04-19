@@ -1,13 +1,13 @@
 import React from "react";
 import Hero from "../Components/Home/Hero";
-import Events from "../Components/Home/Events";
-import Partner from "../Components/Home/Products";
+import Company from "../Components/Home/Company";
+import Partner from "../Components/Home/Partner";
 
 function Home() {
   return (
     <>
       <Hero />
-      <Events />
+      <Company />
       <Partner />
     </>
   );
