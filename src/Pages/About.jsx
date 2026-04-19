@@ -1,17 +1,14 @@
 import React from "react";
 import Company from "../Components/About/Company";
+import History from "../Components/About/History";
+import VisiMisi from "../Components/About/VisiMisi";
 
 function About() {
   return (
     <>
       <Company />
-      {/* <AboutWide /> */}
-      <div className="p-5 md:p-10 px-5 md:px-24">
-        {/* <Value />
-        <Portfolio />
-        <Gallery />
-        <ContactUs /> */}
-      </div>
+            <History/>
+        <VisiMisi/>
     </>
   );
 }
