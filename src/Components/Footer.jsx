@@ -63,7 +63,7 @@ function Footer() {
 
       {/* BOTTOM */}
       <div className="bg-gray-800 text-center text-gray-300 py-3 text-sm">
-        © 2026 PT. Batu Bara. All rights reserved.
+        © 2026 PT. Milenial Sukses Coalindo. All rights reserved.
       </div>
     </>
   );
