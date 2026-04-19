@@ -1,21 +1,16 @@
 import React from "react";
-import AboutWide from "../Components/About/AboutWide";
-import Portfolio from "../Components/About/Portfolio";
-import Value from "../Components/About/Value";
-import ContactUs from "../Components/About/ContactUs";
-import Gallery from "../Components/About/Gallery";
-import Hero from "../Components/About/Hero";
+import Company from "../Components/About/Company";
 
 function About() {
   return (
     <>
-      <Hero />
-      <AboutWide />
+      <Company />
+      {/* <AboutWide /> */}
       <div className="p-5 md:p-10 px-5 md:px-24">
-        <Value />
+        {/* <Value />
         <Portfolio />
         <Gallery />
-        <ContactUs />
+        <ContactUs /> */}
       </div>
     </>
   );

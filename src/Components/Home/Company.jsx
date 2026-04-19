@@ -26,7 +26,7 @@ function CompanyInfo() {
 					</p>
 
 					<h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-5">
-						Leading and Trusted Coal Supplier in Indonesia
+						PT. MILENIAL SUKSES COALINDO
 					</h2>
 
 					<p className="text-gray-600 mb-6">

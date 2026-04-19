@@ -35,7 +35,7 @@ function Footer() {
           </p>
 
           <p>
-            <span className="font-semibold">WhatsApp:</span> +62 812 3456 7890
+            <span className="font-semibold">WhatsApp:</span> +62 812 00000
           </p>
 
           {/* ICONS */}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import CtaImg from "../assets/img/elements/cta-whatsappp.webp";
-import PopupWA from "../assets/img/elements/popup-whatsapp.webp";
+import CtaImg from "../assets/img/elements/whatsapp.png";
+import PopupWA from "../assets/img/elements/popup.png";
 
 export default function CtaWhatsapp() {
   const [popup, setPopup] = useState(false);
