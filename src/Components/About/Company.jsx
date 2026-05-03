@@ -1,10 +1,34 @@
-import React from "react";
-import Poster1 from "../../assets/img/events/gallery3.jpg";
+import React, { useEffect, useState, useRef } from "react";
+import Poster1 from "../../assets/img/company/gallery3.jpg";
 import { Link } from "react-router-dom";
 
 function CompanyInfo() {
+	const [isVisible, setIsVisible] = useState(false);
+	const ref = useRef();
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				if (entry.isIntersecting) {
+					setIsVisible(true);
+				}
+			},
+			{ threshold: 0.2 }
+		);
+
+		if (ref.current) observer.observe(ref.current);
+
+		return () => {
+			if (ref.current) observer.unobserve(ref.current);
+		};
+	}, []);
+
 	return (
-		<section className="bg-white py-16 px-5 md:px-20">
+		<section
+			ref={ref}
+			className={`bg-white py-16 px-5 md:px-20 transition-all duration-1000 ease-out
+			${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+		>
 			<div className="flex flex-col md:flex-row items-center gap-10">
 
 				{/* LEFT IMAGE */}
@@ -15,7 +39,6 @@ function CompanyInfo() {
 						className="rounded-xl w-full object-cover"
 					/>
 
-					{/* ORANGE FRAME (optional seperti contoh kamu) */}
 					<div className="hidden md:block absolute -right-5 top-10 w-full h-full border-4 border-orange-400 rounded-xl -z-10"></div>
 				</div>
 
@@ -31,7 +54,7 @@ function CompanyInfo() {
 
 					<p className="text-gray-600 mb-6">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
 				</div>
 			</div>
