@@ -5,19 +5,20 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <div className="bg-gray-700 text-white px-5 md:px-24 py-10 flex flex-col md:flex-row justify-between items-start gap-10">
+      {/* Mengubah bg-gray-700 menjadi bg-[#7a7a7a] */}
+      <div className="bg-[#7a7a7a] text-white px-5 md:px-24 py-10 flex flex-col md:flex-row justify-between items-start gap-10">
         
         {/* LEFT - LOGO */}
         <div className="flex flex-col">
           <img src={Logo} alt="logo" className="w-[180px] mb-4" />
-          <p className="text-gray-300">
+          <p className="text-gray-200">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
 
         {/* MIDDLE - ADDRESS */}
         <div className="max-w-[400px]">
-          <p className="text-gray-200 leading-relaxed">
+          <p className="text-gray-100 leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -41,19 +42,19 @@ function Footer() {
           {/* ICONS */}
           <div className="flex gap-4 mt-4">
             
-            <div className="w-10 h-10 flex items-center justify-center border border-white rounded-full hover:bg-white hover:text-gray-700 transition cursor-pointer">
+            <div className="w-10 h-10 flex items-center justify-center border border-white rounded-full hover:bg-white hover:text-[#7a7a7a] transition cursor-pointer">
               📞
             </div>
 
-            <div className="w-10 h-10 flex items-center justify-center border border-white rounded-full hover:bg-white hover:text-gray-700 transition cursor-pointer">
+            <div className="w-10 h-10 flex items-center justify-center border border-white rounded-full hover:bg-white hover:text-[#7a7a7a] transition cursor-pointer">
               ✉️
             </div>
 
-            <div className="w-10 h-10 flex items-center justify-center border border-white rounded-full hover:bg-white hover:text-gray-700 transition cursor-pointer">
+            <div className="w-10 h-10 flex items-center justify-center border border-white rounded-full hover:bg-white hover:text-[#7a7a7a] transition cursor-pointer">
               💬
             </div>
 
-            <div className="w-10 h-10 flex items-center justify-center border border-white rounded-full hover:bg-white hover:text-gray-700 transition cursor-pointer">
+            <div className="w-10 h-10 flex items-center justify-center border border-white rounded-full hover:bg-white hover:text-[#7a7a7a] transition cursor-pointer">
               📷
             </div>
 
@@ -61,8 +62,8 @@ function Footer() {
         </div>
       </div>
 
-      {/* BOTTOM */}
-      <div className="bg-gray-800 text-center text-gray-300 py-3 text-sm">
+      {/* BOTTOM - Menggunakan warna yang sedikit lebih gelap dari warna utama agar kontras */}
+      <div className="bg-[#5a5a5a] text-center text-gray-200 py-3 text-sm">
         © 2026 PT. Milenial Sukses Coalindo. All rights reserved.
       </div>
     </>

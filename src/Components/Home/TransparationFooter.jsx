@@ -1,4 +1,4 @@
-import Image3 from "../../assets/img/company/coaldistribution.jpg";
+import Image3 from "../../assets/img/company/coaldistribution2.jpg";
 
 export default function HeroSection() {
     return (

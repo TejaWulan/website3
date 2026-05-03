@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/website3/static/css/main.3b5ce60a.css",
+    "main.js": "/website3/static/js/main.d76f2be5.js",
+    "static/media/MicrosoftTeams-image (62) (2).png": "/website3/static/media/MicrosoftTeams-image (62) (2).7eeb4a6f185a5ef11dfb.png",
+    "static/media/coaldistribution.jpg": "/website3/static/media/coaldistribution.92cf0a42acd21c084c46.jpg",
+    "static/media/Our Products_Banner Image.png": "/website3/static/media/Our Products_Banner Image.dc123337ec4de34754e5.png",
+    "static/media/coaldistribution2.jpg": "/website3/static/media/coaldistribution2.1a7f173822e2aa8b32cc.jpg",
+    "static/media/bulat_banner.png": "/website3/static/media/bulat_banner.509c143199b360e608b6.png",
+    "static/media/coalfactory.png": "/website3/static/media/coalfactory.73d92cc17dc95e4a94c6.png",
+    "static/media/qualitycontrol.png": "/website3/static/media/qualitycontrol.88ea4d0fb87eac7f8020.png",
+    "static/media/payment.png": "/website3/static/media/payment.e807e4698fd787bbc9d0.png",
+    "static/media/Software Engineering.png": "/website3/static/media/Software Engineering.c2f1fef11b0610eff0fa.png",
+    "static/media/networking.png": "/website3/static/media/networking.414f1d5d95499e0a5186.png",
+    "static/media/logo_batu_bara.png": "/website3/static/media/logo_batu_bara.5039748fe17e65a866d9.png",
+    "static/media/Frontend Developer.png": "/website3/static/media/Frontend Developer.7c2009e6d0f5e7ab0513.png",
+    "static/media/kapal.png": "/website3/static/media/kapal.ba06f4076120c881fb95.png",
+    "static/media/Java Bootcamp.png": "/website3/static/media/Java Bootcamp.752fa003dc46fcfc9eca.png",
+    "static/media/Data Engineer.png": "/website3/static/media/Data Engineer.8edb183b9f9c202624a4.png",
+    "static/media/Asset 4@2x 1.webp": "/website3/static/media/Asset 4@2x 1.535b002fdad8272518bc.webp",
+    "static/media/ELECTIVE COURSE.png": "/website3/static/media/ELECTIVE COURSE.192a9d01217b499aa924.png",
+    "static/media/truckdanbatubara.jpg": "/website3/static/media/truckdanbatubara.9164b4567572f72fca59.jpg",
+    "static/media/Professional Development.png": "/website3/static/media/Professional Development.753e53c4f0aba83c5685.png",
+    "static/media/ENRICHMENT COURSE.png": "/website3/static/media/ENRICHMENT COURSE.734135bc1049ea4099b6.png",
+    "static/media/Business Growth.png": "/website3/static/media/Business Growth.5c48f3e861f2503be04b.png",
+    "static/media/Backend Developer.png": "/website3/static/media/Backend Developer.9b7e0891b4fcc893f0c6.png",
+    "static/media/IT Support.png": "/website3/static/media/IT Support.8cc23e11939fa6e3bcd9.png",
+    "static/media/gallery1.png": "/website3/static/media/gallery1.d987c812382a617d541a.png",
+    "static/media/gallery3.jpg": "/website3/static/media/gallery3.fee1c1b7aa589da6005d.jpg",
+    "static/media/Picturehome2.jpg": "/website3/static/media/Picturehome2.bce854d83968e9c06b06.jpg",
+    "static/media/Asset 2@2x 1.webp": "/website3/static/media/Asset 2@2x 1.19b074cf0eb73748a489.webp",
+    "static/media/rekind.png": "/website3/static/media/rekind.7edc5edd6dd0aa351e9f.png",
+    "static/media/kaldera.png": "/website3/static/media/kaldera.2b391ec7636c9fe52414.png",
+    "static/media/Asset 2@2x 2 (1).webp": "/website3/static/media/Asset 2@2x 2 (1).18466e9e119116392f49.webp",
+    "index.html": "/website3/index.html",
+    "main.3b5ce60a.css.map": "/website3/static/css/main.3b5ce60a.css.map",
+    "main.d76f2be5.js.map": "/website3/static/js/main.d76f2be5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b5ce60a.css",
+    "static/js/main.d76f2be5.js"
+  ]
+}
