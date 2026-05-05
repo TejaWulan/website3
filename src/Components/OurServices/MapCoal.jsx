@@ -5,54 +5,54 @@ function CoalDeliveryProcess() {
   return (
     <section 
       style={{
-        backgroundColor: '#f9fafb', // Warna background section ringan agar gambar menonjol
-        padding: '2rem 0',          // Memberikan padding atas dan bawah agar tidak mentok
+        backgroundColor: '#f9fafb', 
+        padding: '3rem 0', // Menambah padding atas bawah agar lebih lega
       }}
     >
       <div 
         style={{
-          // KONTROL LEBAR UTAMA
-          maxWidth: '1200px',        // Lebar maksimal di layar desktop besar agar tidak terlalu melar
-          margin: '0 auto',          // Membuat konten rata tengah
-          padding: '0 1rem',         // Padding kiri-kanan untuk mobile agar gambar tidak mepet layar
-          
-          // RESPONSIVE LAYOUT
-          // Di mobile/layar kecil (default): display block
-          // Di layar menengah ke atas (misal min-width: 768px untuk 'md'):
-          '@media (min-width: 768px)': {
-            padding: '0 2rem',       // Tambah padding untuk layar lebih besar
-          }
+          // KONTROL LEBAR: Diperkecil dari 1200px ke 1000px agar gambar tidak terlalu raksasa
+          maxWidth: '1000px', 
+          margin: '0 auto', 
+          // Space kiri kanan agar tidak mentok layar (terutama di mobile)
+          padding: '0 1.5rem', 
         }}
       >
         
-        {/* CONTAINER JUDUL (Opsional jika ingin judul diluar gambar) */}
-        {/* <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#111827' }}>Coal Delivery Process</h2>
-        </div> */}
-
-        {/* CONTAINER GAMBAR (Untuk kontrol ukuran penuh) */}
+        {/* CONTAINER GAMBAR */}
         <div 
           style={{
-            width: '100%',            // Mengambil lebar penuh container parent
-            overflow: 'hidden',       // Mencegah gambar meluap jika ada efek rounded
-            borderRadius: '0.75rem',  // Memberikan sedikit rounded corners agar estetik
-            boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)', // Shadow tipis agar gambar terlihat 'mengambang'
-            backgroundColor: 'white', // Warna background container putih jika gambar memiliki transparansi
-            padding: '1rem',          // Padding dalam container agar ada space antara border dan gambar
+            width: '100%',
+            overflow: 'hidden',
+            borderRadius: '1rem', // Membuat sudut lebih halus
+            boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+            backgroundColor: 'white',
+            // Memberikan padding putih di sekeliling gambar agar terlihat seperti bingkai
+            padding: '1.5rem', 
           }}
         >
-          {/* TAG GAMBAR */}
           <img 
             src={CoalDeliveryProcessImage} 
             alt="Coal Delivery Process Diagram"
             style={{
-              width: '100%',          // Gambar mengambil 100% lebar container parent (FULL di mobile/tablet)
-              height: 'auto',         // Menjaga proporsi aspek rasio gambar agar tidak distorsi
-              display: 'block',       // Menghilangkan spasi aneh di bawah gambar
-              
+              width: '100%',
+              height: 'auto',
+              display: 'block',
+              // Menambahkan transisi halus jika ada perubahan ukuran layar
+              transition: 'all 0.3s ease-in-out',
             }}
           />
         </div>
+
+        {/* Optional: Caption singkat di bawah gambar */}
+        <p style={{ 
+          textAlign: 'center', 
+          marginTop: '1.5rem', 
+          color: '#6b7280', 
+          fontSize: '0.875rem',
+          fontWeight: '500' 
+        }}>
+        </p>
         
       </div>
     </section>
