@@ -1,65 +1,75 @@
 import React, { useEffect, useState, useRef } from "react";
-import Poster1 from "../../assets/img/company/gallery3.jpg";
-import { Link } from "react-router-dom";
+import Poster1 from "../../assets/img/company/truck.jpg";
 
 function CompanyInfo() {
-	const [isVisible, setIsVisible] = useState(false);
-	const ref = useRef();
+    const [isVisible, setIsVisible] = useState(false);
+    const ref = useRef();
 
-	useEffect(() => {
-		const observer = new IntersectionObserver(
-			([entry]) => {
-				if (entry.isIntersecting) {
-					setIsVisible(true);
-				}
-			},
-			{ threshold: 0.2 }
-		);
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) setIsVisible(true);
+            },
+            { threshold: 0.1 }
+        );
 
-		if (ref.current) observer.observe(ref.current);
+        if (ref.current) observer.observe(ref.current);
+        return () => {
+            if (ref.current) observer.unobserve(ref.current);
+        };
+    }, []);
 
-		return () => {
-			if (ref.current) observer.unobserve(ref.current);
-		};
-	}, []);
+    return (
+        <section
+            ref={ref}
+            /* mt-12 cukup untuk memberi jarak dari navbar tanpa terlalu lowong */
+            className={`relative bg-white mt-12 md:mt-16 py-8 md:py-12 px-6 md:px-16 lg:px-24 transition-all duration-1000
+      ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+        >
+            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-14 max-w-6xl mx-auto">
 
-	return (
-		<section
-			ref={ref}
-			className={`bg-white py-16 px-5 md:px-20 transition-all duration-1000 ease-out
-			${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
-		>
-			<div className="flex flex-col md:flex-row items-center gap-10">
+                {/* IMAGE - Ukuran lebih proposional */}
+                <div className="relative w-full md:w-5/12 flex justify-center md:justify-start">
+                    <div className="relative max-w-[260px] sm:max-w-[300px] md:max-w-none w-[70%] md:w-full">
+                        <img
+                            src={Poster1}
+                            alt="Company"
+                            className="rounded-lg w-full object-contain relative z-10 shadow-md"
+                        />
 
-				{/* LEFT IMAGE */}
-				<div className="relative w-full md:w-1/2">
-					<img
-						src={Poster1}
-						alt="Company"
-						className="rounded-xl w-full object-cover"
-					/>
+                        {/* BORDER DEKORASI - Lebih tipis dan rapat */}
+                        <div
+                            className="hidden md:block absolute -right-4 -bottom-4 w-full h-full border-[3px] rounded-lg -z-10"
+                            style={{ borderColor: "#e67e22" }}
+                        ></div>
+                    </div>
+                </div>
 
-					<div className="hidden md:block absolute -right-5 top-10 w-full h-full border-4 border-orange-400 rounded-xl -z-10"></div>
-				</div>
+                {/* TEXT CONTENT */}
+                <div className="w-full md:w-7/12 text-left">
+                    <div className="inline-block border-l-4 border-[#e67e22] pl-3 mb-2">
+                        <p className="text-[#424651] font-bold tracking-widest text-[10px] md:text-xs uppercase">
+                            ABOUT
+                        </p>
+                    </div>
 
-				{/* RIGHT TEXT */}
-				<div className="w-full md:w-1/2">
-					<p className="text-green-600 font-semibold tracking-wide mb-2">
-						ABOUT
-					</p>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#2f2f2f] leading-tight mb-4">
+                        PT Milenial Sukses Coalindo
+                    </h2>
 
-					<h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-5">
-						PT. MILENIAL SUKSES COALINDO
-					</h2>
-
-					<p className="text-gray-600 mb-6">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					</p>
-				</div>
-			</div>
-		</section>
-	);
+                    <div className="text-gray-600 leading-relaxed text-sm md:text-base space-y-3">
+                        <p>
+                            <strong className="text-[#424651]">PT Milenial Sukses Coalindo</strong> adalah perusahaan yang bergerak di bidang perdagangan 
+                            batubara dan jasa shipping broker, yang berfokus pada pemenuhan kebutuhan energi untuk sektor industri dan pembangkit listrik di Indonesia.
+                        </p>
+                        <p>
+                            Kami hadir sebagai mitra yang adaptif dan responsif dalam menghadapi dinamika pasar, dengan mengedepankan efisiensi, keandalan, dan profesionalisme dalam setiap proses bisnis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 }
 
 export default CompanyInfo;

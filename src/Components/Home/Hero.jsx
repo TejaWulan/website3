@@ -7,18 +7,18 @@ import Image4 from "../../assets/img/elements/bulat_banner.png";
 const slides = [
   {
     image: Image1,
-    title: "Trusted Mining Industry Leader in Indonesia",
-    desc: "We provide a variety of essential natural resources",
+    title: "PT Milenial Sukses Coalindo",
+    desc: "Driven by Youth",
   },
   {
     image: Image2,
-    title: "Delivering Sustainable Energy Solutions",
-    desc: "Empowering industries with reliable resources",
+    title: "PT Milenial Sukses Coalindo",
+    desc: "Strong Commitment",
   },
   {
     image: Image3,
-    title: "Building Strong Future Together",
-    desc: "Committed to excellence and innovation",
+    title: "PT Milenial Sukses Coalindo",
+    desc: "Build by Trust and Best Performance",
   },
 ];
 
@@ -49,16 +49,16 @@ function Hero() {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 z-10"></div>
 
-      {/* CONTENT */}
-      <div className="relative z-20 h-full flex items-center px-5 md:px-24">
+      {/* CONTENT - Diubah ke items-end dan tambah padding bottom agar di kiri bawah */}
+      <div className="relative z-20 h-full flex items-end px-6 md:px-24 pb-20 md:pb-32">
 
-        <div className="flex items-center gap-4 md:gap-6 max-w-[800px]">
+        <div className="flex items-center gap-4 md:gap-6 max-w-[900px]">
 
-          {/* BULAT */}
+          {/* BULAT - Menggunakan Image4 yang sudah dibuat transparan tadi */}
           <img
             src={Image4}
             alt="decoration"
-            className="w-14 md:w-24"
+            className="w-16 md:w-28 object-contain"
           />
 
           {/* TEXT */}
@@ -66,7 +66,7 @@ function Hero() {
 
             <h1
               key={current}
-              className="text-[24px] md:text-[45px] font-extrabold leading-tight transition-all duration-700"
+              className="text-[26px] md:text-[50px] font-extrabold leading-tight transition-all duration-700"
             >
               {slides[current].title}
             </h1>
@@ -75,7 +75,8 @@ function Hero() {
               key={current + "desc"}
               className="mt-3 text-[14px] md:text-[22px] transition-all duration-700"
             >
-              <span className="bg-green-400/80 text-black px-2 py-1 rounded">
+              {/* Box Deskripsi dengan transparansi abu-abu mika */}
+              <span className="bg-[#424651]/70 backdrop-blur-sm text-white px-4 py-2 rounded-sm border-l-4 border-[#e67e22]">
                 {slides[current].desc}
               </span>
             </p>
@@ -85,13 +86,13 @@ function Hero() {
       </div>
 
       {/* DOTS */}
-      <div className="absolute bottom-5 w-full flex justify-center gap-3 z-20">
+      <div className="absolute bottom-5 w-full flex justify-center gap-3 z-30">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrent(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300
-              ${current === index ? "bg-white scale-110" : "bg-white/50"}
+              ${current === index ? "bg-[#e67e22] scale-125" : "bg-white/50"}
             `}
           />
         ))}

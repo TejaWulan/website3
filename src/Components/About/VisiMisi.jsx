@@ -1,97 +1,91 @@
 import React, { useEffect, useState, useRef } from "react";
-import Poster1 from "../../assets/img/company/gallery1.png";
+import Poster1 from "../../assets/img/company/Picture1.png";
 
 function VisionMission() {
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef();
+    const [isVisible, setIsVisible] = useState(false);
+    const ref = useRef();
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.2 }
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) setIsVisible(true);
+            },
+            { threshold: 0.1 }
+        );
+
+        if (ref.current) observer.observe(ref.current);
+        return () => {
+            if (ref.current) observer.unobserve(ref.current);
+        };
+    }, []);
+
+    return (
+        <section
+            ref={ref}
+            className={`relative bg-gray-50 py-12 md:py-16 px-6 md:px-16 lg:px-24 transition-all duration-1000
+      ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+        >
+            <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-14 max-w-6xl mx-auto">
+
+                {/* TEXT CONTENT (Kiri di Desktop) */}
+                <div className="w-full md:w-7/12 text-left">
+                    <div className="inline-block border-l-4 border-[#e67e22] pl-3 mb-2">
+                        <p className="text-[#424651] font-bold tracking-widest text-[10px] md:text-xs uppercase">
+                            VISION & MISSION
+                        </p>
+                    </div>
+
+                    {/* VISION */}
+                    <div className="mb-8">
+                        <h2 className="text-xl md:text-2xl font-extrabold text-[#2f2f2f] mb-3">
+                            Our Vision
+                        </h2>
+                        <p className="text-gray-600 leading-relaxed text-sm md:text-base italic">
+                            "Menjadi perusahaan perdagangan batubara yang terpercaya, kompetitif, dan berkelanjutan dalam memenuhi kebutuhan energi domestik Indonesia."
+                        </p>
+                    </div>
+
+                    {/* MISSION */}
+                    <div>
+                        <h2 className="text-xl md:text-2xl font-extrabold text-[#2f2f2f] mb-3">
+                            Our Mission
+                        </h2>
+                        <ul className="space-y-3">
+                            {[
+                                "Menyediakan pasokan batubara yang stabil dan sesuai dengan spesifikasi kebutuhan pelanggan",
+                                "Memberikan solusi logistik yang efisien melalui layanan shipping broker",
+                                "Mengembangkan hubungan kerja sama jangka panjang yang saling menguntungkan",
+                                "Menjaga kualitas layanan melalui profesionalisme dan responsivitas tinggi"
+                            ].map((item, index) => (
+                                <li key={index} className="flex items-start gap-3 text-gray-600 text-sm md:text-base">
+                                    <span className="text-[#e67e22] mt-1 font-bold">•</span>
+                                    <span>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+
+                {/* IMAGE (Kanan di Desktop) */}
+                <div className="relative w-full md:w-5/12 flex justify-center md:justify-end">
+                    <div className="relative max-w-[260px] sm:max-w-[300px] md:max-w-none w-[70%] md:w-full">
+                        <img
+                            src={Poster1}
+                            alt="Vision Mission"
+                            className="rounded-lg w-full object-contain relative z-10 shadow-md"
+                        />
+
+                        {/* BORDER DEKORASI - Posisi dibalik ke kiri bawah */}
+                        <div
+                            className="hidden md:block absolute -left-4 -bottom-4 w-full h-full border-[3px] rounded-lg -z-10"
+                            style={{ borderColor: "#e67e22" }}
+                        ></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     );
-
-    if (ref.current) observer.observe(ref.current);
-
-    return () => {
-      if (ref.current) observer.unobserve(ref.current);
-    };
-  }, []);
-
-  return (
-    <section
-      ref={ref}
-      className="bg-gray-100 py-20 px-5 md:px-20"
-    >
-      <div className="flex flex-col md:flex-row items-center gap-10">
-
-        {/* LEFT TEXT (dari kanan → ke kiri) */}
-        <div
-          className={`w-full md:w-1/2 transition-all duration-1000 ease-out
-          ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
-        >
-
-          <p className="text-green-400 font-semibold tracking-wide mb-2">
-            PT MILENIAL SUKSES COALINDO
-          </p>
-
-          <h2 className="text-3xl md:text-5xl font-extrabold text-black mb-8">
-            Vision & Mission
-          </h2>
-
-          {/* VISION */}
-          <div className="mb-6">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="bg-orange-400 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm">
-                ✓
-              </div>
-              <h3 className="font-bold text-lg">Our Vision</h3>
-            </div>
-
-            <p className="text-gray-700 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-
-          {/* MISSION */}
-          <div>
-            <div className="flex items-center gap-3 mb-2">
-              <div className="bg-orange-400 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm">
-                ✓
-              </div>
-              <h3 className="font-bold text-lg">Our Mission</h3>
-            </div>
-
-            <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
-              <li>Sed do eiusmod tempor incididunt ut labore et dolore</li>
-              <li>Ut enim ad minim veniam quis nostrud exercitation</li>
-            </ul>
-          </div>
-        </div>
-
-        {/* RIGHT IMAGE (dari kiri → ke kanan biar kontras) */}
-        <div
-          className={`relative w-full md:w-1/2 transition-all duration-1000 ease-out delay-200
-          ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
-        >
-          <img
-            src={Poster1}
-            alt="Vision Mission"
-            className="rounded-xl w-full object-cover"
-          />
-
-          <div className="hidden md:block absolute -right-5 top-10 w-full h-full border-4 border-orange-400 rounded-xl -z-10"></div>
-        </div>
-
-      </div>
-    </section>
-  );
 }
 
 export default VisionMission;

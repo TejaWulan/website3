@@ -1,23 +1,16 @@
 import React, { useEffect, useState } from "react";
-import Kaldera from "../../assets/img/home/kaldera.png";
-import Ken from "../../assets/img/home/KEN-OP.png";
-import OSRAM from "../../assets/img/home/osram-OP.png";
-import HBT from "../../assets/img/home/HBT-OP.png";
-import Virema from "../../assets/img/home/PT_Virema_Impex-OP.png";
-import SSLG from "../../assets/img/home/SSLG-OP.png";
-import Rekind from "../../assets/img/home/rekind.png";
+import Sinarmas from "../../assets/img/home/APPSINARMAS-OC-removebg-preview.png";
+import BAI from "../../assets/img/home/BAI-OC.png-removebg-preview.png";
+import BAP from "../../assets/img/home/BAP-OC-removebg-preview.png";
+import SAMORA from "../../assets/img/home/samora_gropu-oc.png";
 
 
-function Partner() {
+function Client() {
   const data = [
-    { img: Kaldera, title: "PT KALDERA COAL SUPPLIER" },
-    { img: Ken, title: "PT KARYA ENERGI NUSANTARA" },
-    { img: OSRAM, title: "PT OSRAM MANDIRI SEJAHTERA" },
-    { img: HBT, title: "PT HASYIM BARA TAMA" },
-    { img: Virema, title: "PT VIREMA IMPEX" },
-    { img: SSLG, title: "SSLG GROUP" },    
-    { img: Rekind, title: "PT REKIND DAYA MAMUJU" },
-
+    { img: Sinarmas, title: "PT APP SINARMAS" },
+    { img: BAI, title: "PT BORNEO AlUMINA INDONESIA" },
+    { img: BAP, title: "PT BORNEO ALUMINDO PRIMA" },
+    { img: SAMORA, title: "SAMORA GROUP" },
   ];
 
   const extendedData = [...data, ...data, ...data];
@@ -59,7 +52,7 @@ function Partner() {
   return (
     <div className="mt-10 py-16 bg-gray-100 relative overflow-hidden">
       <h1 className="text-center text-3xl md:text-5xl font-extrabold text-[#424651] mb-10">
-        Our Partners
+        Our Clients
       </h1>
 
       <div className="absolute inset-0 flex items-center justify-between px-4 md:px-10 pointer-events-none">
@@ -101,4 +94,4 @@ function Partner() {
   );
 }
 
-export default Partner;
+export default Client;
