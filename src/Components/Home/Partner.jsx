@@ -6,6 +6,9 @@ import HBT from "../../assets/img/home/HBT-OP.png";
 import Virema from "../../assets/img/home/PT_Virema_Impex-OP.png";
 import SSLG from "../../assets/img/home/SSLG-OP.png";
 import Rekind from "../../assets/img/home/rekind.png";
+import Sadiyah from "../../assets/img/home/SADIYAH-OP.png";
+import Saka from "../../assets/img/home/sakainahperkasa-OP.png";
+
 
 
 function Partner() {
@@ -15,8 +18,11 @@ function Partner() {
     { img: OSRAM, title: "PT OSRAM MANDIRI SEJAHTERA" },
     { img: HBT, title: "PT HASYIM BARA TAMA" },
     { img: Virema, title: "PT VIREMA IMPEX" },
-    { img: SSLG, title: "SSLG GROUP" },    
+    { img: SSLG, title: "SSLG GROUP" },
     { img: Rekind, title: "PT REKIND DAYA MAMUJU" },
+    { img: Sadiyah, title: "SADIYAH PTE LTD" },
+    { img: Saka, title: "PT SAKA INDAH PERKASA" },
+
 
   ];
 

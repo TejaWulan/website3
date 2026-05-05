@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website3/static/css/main.aa4084e7.css",
-    "main.js": "/website3/static/js/main.171cb32e.js",
+    "main.js": "/website3/static/js/main.7883498c.js",
     "static/media/coalmap.png": "/website3/static/media/coalmap.228ec613369aea685fe9.png",
     "static/media/MicrosoftTeams-image (62) (2).png": "/website3/static/media/MicrosoftTeams-image (62) (2).7eeb4a6f185a5ef11dfb.png",
     "static/media/coaldistribution.jpg": "/website3/static/media/coaldistribution.92cf0a42acd21c084c46.jpg",
@@ -14,12 +14,14 @@
     "static/media/qualitycontrol.png": "/website3/static/media/qualitycontrol.88ea4d0fb87eac7f8020.png",
     "static/media/1247700294.jpg": "/website3/static/media/1247700294.170ca4f5363fc5914798.jpg",
     "static/media/KEN-OP.png": "/website3/static/media/KEN-OP.eb2ef08614d6f7d484b4.png",
+    "static/media/SADIYAH-OP.png": "/website3/static/media/SADIYAH-OP.b9c3fa40286dacc3047b.png",
     "static/media/payment.png": "/website3/static/media/payment.e807e4698fd787bbc9d0.png",
     "static/media/truck.jpg": "/website3/static/media/truck.5ae6285e23110626b9bd.jpg",
     "static/media/networking.png": "/website3/static/media/networking.414f1d5d95499e0a5186.png",
     "static/media/logo_batu_bara.png": "/website3/static/media/logo_batu_bara.5039748fe17e65a866d9.png",
     "static/media/kapal.png": "/website3/static/media/kapal.ba06f4076120c881fb95.png",
     "static/media/Asset 4@2x 1.webp": "/website3/static/media/Asset 4@2x 1.535b002fdad8272518bc.webp",
+    "static/media/sakainahperkasa-OP.png": "/website3/static/media/sakainahperkasa-OP.74c54273667816cd3823.png",
     "static/media/truckdanbatubara.jpg": "/website3/static/media/truckdanbatubara.9164b4567572f72fca59.jpg",
     "static/media/APPSINARMAS-OC-removebg-preview.png": "/website3/static/media/APPSINARMAS-OC-removebg-preview.1b2b941e1fd0026e742b.png",
     "static/media/PT_Virema_Impex-OP.png": "/website3/static/media/PT_Virema_Impex-OP.989ae4d9ffcadf038759.png",
@@ -33,10 +35,10 @@
     "static/media/kaldera.png": "/website3/static/media/kaldera.2b391ec7636c9fe52414.png",
     "index.html": "/website3/index.html",
     "main.aa4084e7.css.map": "/website3/static/css/main.aa4084e7.css.map",
-    "main.171cb32e.js.map": "/website3/static/js/main.171cb32e.js.map"
+    "main.7883498c.js.map": "/website3/static/js/main.7883498c.js.map"
   },
   "entrypoints": [
     "static/css/main.aa4084e7.css",
-    "static/js/main.171cb32e.js"
+    "static/js/main.7883498c.js"
   ]
 }
