@@ -23,69 +23,80 @@ function CompanyInfo() {
   return (
     <section
       ref={ref}
-      className={`bg-white py-12 md:py-20 px-6 md:px-16 lg:px-24 transition-all duration-1000
+      /* mt-16 untuk space navbar, py-12 untuk nafas di mobile */
+      className={`bg-white mt-16 md:mt-0 py-12 md:py-24 px-5 sm:px-8 md:px-16 lg:px-24 transition-all duration-1000 ease-out
       ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
     >
-      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20">
+      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16 lg:gap-20 max-w-6xl mx-auto">
 
-        {/* IMAGE - Ukuran diperkecil untuk mobile */}
-        <div className="relative w-full md:w-5/12 flex justify-center md:justify-start">
-          <div className="relative max-w-[280px] sm:max-w-[320px] md:max-w-none w-[75%] md:w-full">
+        {/* IMAGE SECTION */}
+        <div className="relative w-full md:w-1/2 flex justify-center">
+          {/* Box container gambar: w-[85%] di mobile agar tidak mentok layar */}
+          <div className="relative w-[85%] sm:w-[70%] md:w-full max-w-[350px] md:max-w-none">
             <img
               src={Poster1}
-              alt="Company"
-              className="rounded-xl w-full object-contain relative z-10 shadow-lg md:shadow-none"
+              alt="Company Information"
+              className="rounded-2xl w-full h-auto object-cover relative z-10 shadow-xl md:shadow-2xl"
             />
 
-            {/* BORDER DEKORASI - Hanya muncul di desktop atau disesuaikan */}
+            {/* BORDER DEKORASI */}
             <div
-              className="hidden md:block absolute -right-6 -bottom-6 w-full h-full border-4 rounded-xl -z-10"
+              className="absolute -right-3 -bottom-3 md:-right-6 md:-bottom-6 w-full h-full border-2 md:border-4 rounded-2xl -z-0"
               style={{ borderColor: "#e67e22" }}
             ></div>
           </div>
         </div>
 
-        {/* TEXT */}
-        <div className="w-full md:w-7/12 max-w-xl text-left">
-          <div className="inline-block border-l-4 border-[#e67e22] pl-3 mb-3">
-            <p className="text-[#424651] font-bold tracking-widest text-[10px] md:text-xs uppercase">
-              COMPANY INFORMATION
+        {/* TEXT CONTENT SECTION */}
+        <div className="w-full md:w-1/2 text-left">
+          {/* Label Kecil */}
+          <div className="inline-flex items-center border-l-4 border-[#e67e22] pl-3 mb-4">
+            <p className="text-[#424651] font-bold tracking-[0.2em] text-[10px] md:text-xs uppercase">
+              Company Information
             </p>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#2f2f2f] leading-tight mb-5">
+          {/* Judul: text-2xl sangat pas untuk mobile agar tidak terlalu intimidatif */}
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#2f2f2f] leading-[1.2] mb-6">
             PT Milenial Sukses Coalindo
           </h2>
 
-          <p className="text-gray-600 mb-6 leading-relaxed text-sm md:text-base">
-            <strong className="text-[#424651]">Reliable Coal Trading Partner for Domestic Industry.</strong>
-            <br /><br />
-            PT Milenial Sukses Coalindo merupakan perusahaan yang bergerak di bidang perdagangan batubara dan jasa shipping broker.
-            Kami berkomitmen menyediakan pasokan batubara yang stabil, kompetitif, dan tepat waktu.
-          </p>
+          <div className="text-gray-600 mb-8 space-y-4 leading-relaxed text-[15px] md:text-base">
+            <p>
+              <strong className="text-[#424651] font-bold">
+                Reliable Coal Trading Partner for Domestic Industry.
+              </strong>
+            </p>
+            <p>
+              Kami merupakan perusahaan yang bergerak di bidang perdagangan batubara dan jasa shipping broker dengan komitmen menyediakan pasokan yang stabil, kompetitif, dan tepat waktu.
+            </p>
+          </div>
 
-          {/* LIST */}
-          <div className="grid grid-cols-1 gap-3 mb-8">
+          {/* LIST FEATURES */}
+          <div className="flex flex-col gap-4 mb-10">
             {[
               "Pasokan batubara berkualitas & harga kompetitif",
               "Fokus kebutuhan industri domestik",
               "Layanan logistik terintegrasi"
             ].map((item, i) => (
-              <div key={i} className="flex items-center gap-3">
-                <div className="bg-[#e67e22] text-white rounded-full min-w-[20px] h-[20px] flex items-center justify-center text-[10px]">
+              <div key={i} className="flex items-start gap-3">
+                <div className="mt-1 bg-[#e67e22] text-white rounded-full min-w-[18px] h-[18px] flex items-center justify-center text-[10px] flex-shrink-0">
                   ✓
                 </div>
-                <p className="text-gray-700 text-sm md:text-base font-medium">
+                <p className="text-gray-700 text-sm md:text-base font-medium leading-tight">
                   {item}
                 </p>
               </div>
             ))}
           </div>
 
-          <Link to="/about">
-            <button className="group relative px-6 py-2.5 text-sm font-bold text-[#424651] transition-all duration-300">
-              <span className="relative z-10">READ MORE</span>
-              <div className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e67e22] group-hover:h-full transition-all duration-300 -z-0 opacity-20"></div>
+          {/* BUTTON: Diperlebar sedikit di mobile agar mudah di-klik */}
+          <Link to="/about" className="inline-block w-full sm:w-auto">
+            <button className="group relative w-full sm:w-auto px-8 py-3 text-sm font-bold text-[#424651] transition-all duration-300 border border-gray-200 sm:border-none">
+              <span className="relative z-10 uppercase tracking-widest">Read More</span>
+              <div className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e67e22] group-hover:h-full transition-all duration-300 -z-0 opacity-10"></div>
+              {/* Border aksen bawah tetap terlihat di mobile */}
+              <div className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e67e22]"></div>
             </button>
           </Link>
 

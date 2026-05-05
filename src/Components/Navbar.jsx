@@ -53,6 +53,13 @@ function Navbar({ navShow, setNavShow }) {
               </NavLink>
             </li>
 
+            {/* TAMBAHAN MENU OUR SERVICES */}
+            <li className="pb-1 text-lg font-semibold uppercase tracking-wide transition">
+              <NavLink to="/ourservices" className={navStyle}>
+                Our Services
+              </NavLink>
+            </li>
+
           </ul>
 
           {/* Mobile Icon */}
@@ -96,6 +103,17 @@ function Navbar({ navShow, setNavShow }) {
               className={navStyleMobile}
             >
               About Us
+            </NavLink>
+          </li>
+
+          {/* TAMBAHAN MENU OUR SERVICES MOBILE */}
+          <li className="my-6 text-right text-xl font-semibold">
+            <NavLink
+              to="/ourservices"
+              onClick={handleNav}
+              className={navStyleMobile}
+            >
+              Our Services
             </NavLink>
           </li>
 
