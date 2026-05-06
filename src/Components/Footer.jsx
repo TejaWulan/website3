@@ -12,7 +12,7 @@ function Footer() {
           
           {/* LEFT - LOGO */}
           <div className="flex flex-col items-start min-w-[200px]">
-            <img src={Logo} alt="Kaldera Logo" className="w-[220px] h-auto mb-2" />
+            <img src={Logo} alt="PT. Milenial Logo" className="w-[220px] h-auto mb-2" />
           </div>
 
           {/* MIDDLE - ADDRESS */}
@@ -72,7 +72,7 @@ function Footer() {
 
       {/* BOTTOM - COPYRIGHT */}
       <div className="bg-[#7a7a7a] border-t border-white/20 text-center text-white py-6 text-[13px] font-bold tracking-wide">
-        © 2024-2026 PT Kaldera Energi Nusantara. All rights reserved. Developed by Nectar Website.
+        © 2026 PT Milenial Sukses Coalindo. All rights reserved.
       </div>
     </footer>
   );
