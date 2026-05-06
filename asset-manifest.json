@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website3/static/css/main.aa4084e7.css",
-    "main.js": "/website3/static/js/main.7883498c.js",
+    "main.js": "/website3/static/js/main.0c0d6743.js",
     "static/media/coalmap.png": "/website3/static/media/coalmap.228ec613369aea685fe9.png",
     "static/media/MicrosoftTeams-image (62) (2).png": "/website3/static/media/MicrosoftTeams-image (62) (2).7eeb4a6f185a5ef11dfb.png",
     "static/media/coaldistribution.jpg": "/website3/static/media/coaldistribution.92cf0a42acd21c084c46.jpg",
@@ -35,10 +35,10 @@
     "static/media/kaldera.png": "/website3/static/media/kaldera.2b391ec7636c9fe52414.png",
     "index.html": "/website3/index.html",
     "main.aa4084e7.css.map": "/website3/static/css/main.aa4084e7.css.map",
-    "main.7883498c.js.map": "/website3/static/js/main.7883498c.js.map"
+    "main.0c0d6743.js.map": "/website3/static/js/main.0c0d6743.js.map"
   },
   "entrypoints": [
     "static/css/main.aa4084e7.css",
-    "static/js/main.7883498c.js"
+    "static/js/main.0c0d6743.js"
   ]
 }
