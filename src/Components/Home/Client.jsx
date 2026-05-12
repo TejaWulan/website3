@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Sinarmas from "../../assets/img/home/APPSINARMAS-OC-removebg-preview.png";
+import Sinarmas from "../../assets/img/home/APPSINARMAS-OC2.png";
 import BAI from "../../assets/img/home/BAI-OC.png-removebg-preview.png";
 import BAP from "../../assets/img/home/BAP-OC-removebg-preview.png";
 import SAMORA from "../../assets/img/home/samora_gropu-oc.png";
+import Rekind from "../../assets/img/home/rekind.png";
 
 
 function Client() {
@@ -11,6 +12,7 @@ function Client() {
     { img: BAI, title: "PT BORNEO AlUMINA INDONESIA" },
     { img: BAP, title: "PT BORNEO ALUMINDO PRIMA" },
     { img: SAMORA, title: "SAMORA GROUP" },
+    { img: Rekind, title: "PT REKIND DAYA MAMUJU" },
   ];
 
   const extendedData = [...data, ...data, ...data];

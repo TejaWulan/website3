@@ -8,17 +8,17 @@ const slides = [
   {
     image: Image1,
     title: "PT Milenial Sukses Coalindo",
-    desc: "Driven by Youth",
+    desc: "Reliable Source",
   },
   {
     image: Image2,
     title: "PT Milenial Sukses Coalindo",
-    desc: "Strong Commitment",
+    desc: "Coordinated Shipment",
   },
   {
     image: Image3,
     title: "PT Milenial Sukses Coalindo",
-    desc: "Build by Trust and Best Performance",
+    desc: "Committed Partnership",
   },
 ];
 

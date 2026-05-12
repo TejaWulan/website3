@@ -12,9 +12,9 @@ function Home() {
     <>
       <Hero />
       <Company />
+      <OurServices/>
       <Partner />
       <Client/>
-      <OurServices/>
       <Transparation/>
     </>
   );

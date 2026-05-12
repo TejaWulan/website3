@@ -1,5 +1,5 @@
 import React from 'react';
-import CoalDeliveryProcessImage from "../../assets/img/ourservices/coalmap.png";
+import CoalDeliveryProcessImage from "../../assets/img/ourservices/coalmap2revisi.png";
 
 function CoalDeliveryProcess() {
   return (

@@ -1,27 +1,23 @@
 import React, { useEffect, useState } from "react";
-import Kaldera from "../../assets/img/home/kaldera.png";
-import Ken from "../../assets/img/home/KEN-OP.png";
-import OSRAM from "../../assets/img/home/osram-OP.png";
+import Kaldera from "../../assets/img/home/kaldera2.png";
+//import OSRAM from "../../assets/img/home/osram-OP.png";
 import HBT from "../../assets/img/home/HBT-OP.png";
 import Virema from "../../assets/img/home/PT_Virema_Impex-OP.png";
-import SSLG from "../../assets/img/home/SSLG-OP.png";
-import Rekind from "../../assets/img/home/rekind.png";
+import SSLG from "../../assets/img/home/SSLG-OP2.png";
 import Sadiyah from "../../assets/img/home/SADIYAH-OP.png";
-import Saka from "../../assets/img/home/sakainahperkasa-OP.png";
+//import Saka from "../../assets/img/home/sakainahperkasa-OP.png";
 
 
 
 function Partner() {
   const data = [
     { img: Kaldera, title: "PT KALDERA COAL SUPPLIER" },
-    { img: Ken, title: "PT KARYA ENERGI NUSANTARA" },
-    { img: OSRAM, title: "PT OSRAM MANDIRI SEJAHTERA" },
+   /// { img: OSRAM, title: "PT OSRAM MANDIRI SEJAHTERA" },
     { img: HBT, title: "PT HASYIM BARA TAMA" },
     { img: Virema, title: "PT VIREMA IMPEX" },
     { img: SSLG, title: "SSLG GROUP" },
-    { img: Rekind, title: "PT REKIND DAYA MAMUJU" },
     { img: Sadiyah, title: "SADIYAH PTE LTD" },
-    { img: Saka, title: "PT SAKA INDAH PERKASA" },
+   // { img: Saka, title: "PT SAKA INDAH PERKASA" },
 
 
   ];

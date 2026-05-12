@@ -4,7 +4,7 @@ import Home from "./Pages/Home";
 import Layout from "./Pages/Layout";
 import OurServices from "./Pages/OurServices";
 import About from "./Pages/About";
-import Blog from "./Pages/Blog";
+import OurProduct from "./Pages/OurProduct";
 import BlogDetail from "./Pages/BlogDetail";
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
           <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
           <Route path="/ourservices" element={<OurServices />} />
-          {/* <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/detail/:id" element={<BlogDetail />} /> */}
+           <Route path="/ourproduct" element={<OurProduct />} />
+          {/* <Route path="/blog/detail/:id" element={<BlogDetail />} />  */}
         </Route>
       </Routes>
     </HashRouter >

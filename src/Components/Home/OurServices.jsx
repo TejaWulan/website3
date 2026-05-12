@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import gambar1 from "../../assets/img/elements/networking.png"; 
 import gambar2 from "../../assets/img/elements/qualitycontrol.png";
 import gambar3 from "../../assets/img/elements/kapal.png";
-import gambar4 from "../../assets/img/elements/payment.png";
+import gambar4 from "../../assets/img/elements/salam.png";
 
 const Services = () => {
   const [isVisible, setIsVisible] = useState(false);

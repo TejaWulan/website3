@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import Poster1 from "../../assets/img/company/Picture1.png";
+import Poster1 from "../../assets/img/company/aboutus.png";
 
 function VisionMission() {
     const [isVisible, setIsVisible] = useState(false);
@@ -8,13 +8,12 @@ function VisionMission() {
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                // Memicu animasi saat elemen masuk ke viewport
                 if (entry.isIntersecting) {
                     setIsVisible(true);
                 }
             },
             { 
-                threshold: 0.15, // Muncul setelah 15% bagian section terlihat
+                threshold: 0.15, 
                 rootMargin: "0px 0px -50px 0px" 
             }
         );
@@ -33,7 +32,7 @@ function VisionMission() {
         >
             <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16 lg:gap-24 max-w-7xl mx-auto">
 
-                {/* IMAGE SECTION - Sekarang muncul dari Bawah ke Atas */}
+                {/* IMAGE SECTION - Muncul dari Bawah ke Atas */}
                 <div 
                     className={`relative w-full md:w-5/12 flex justify-center md:order-2 transition-all duration-1000 ease-out
                     ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}
@@ -52,7 +51,7 @@ function VisionMission() {
                     </div>
                 </div>
 
-                {/* TEXT CONTENT - Tetap muncul dari Kiri ke Kanan */}
+                {/* TEXT CONTENT - Muncul dari Kiri ke Kanan */}
                 <div 
                     className={`w-full md:w-7/12 text-left mt-10 md:mt-0 md:order-1 transition-all duration-1000 delay-300 ease-out
                     ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"}`}
@@ -63,6 +62,7 @@ function VisionMission() {
                         </p>
                     </div>
 
+                    {/* VISION SECTION */}
                     <div className="mb-10">
                         <h2 className="text-2xl md:text-3xl font-extrabold text-[#2f2f2f] mb-4">
                             Our Vision
@@ -72,6 +72,7 @@ function VisionMission() {
                         </p>
                     </div>
 
+                    {/* MISSION SECTION */}
                     <div>
                         <h2 className="text-2xl md:text-3xl font-extrabold text-[#2f2f2f] mb-4">
                             Our Mission
@@ -79,12 +80,12 @@ function VisionMission() {
                         <ul className="space-y-4">
                             {[
                                 "Menyediakan pasokan batubara yang stabil dan sesuai dengan spesifikasi kebutuhan pelanggan",
-                                "Memberikan solusi logistik yang efisien melalui layanan shipping broker",
+                                "Mengembangkan sistem distribusi yang efisien dan tepat waktu",
                                 "Mengembangkan hubungan kerja sama jangka panjang yang saling menguntungkan",
                                 "Menjaga kualitas layanan melalui profesionalisme dan responsivitas tinggi"
                             ].map((item, index) => (
-                                <li key={index} className="flex items-start gap-3 text-gray-600 text-sm md:text-base font-medium">
-                                    <div className="mt-1.5 bg-[#e67e22] rounded-full min-w-[10px] h-[10px] flex-shrink-0"></div>
+                                <li key={index} className="flex items-start gap-3 text-gray-700 text-sm md:text-base font-semibold leading-tight">
+                                    <div className="mt-1.5 bg-[#e67e22] rounded-full min-w-[10px] h-[10px] flex-shrink-0 shadow-sm"></div>
                                     <span>{item}</span>
                                 </li>
                             ))}

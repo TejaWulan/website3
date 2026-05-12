@@ -53,10 +53,16 @@ function Navbar({ navShow, setNavShow }) {
               </NavLink>
             </li>
 
-            {/* TAMBAHAN MENU OUR SERVICES */}
             <li className="pb-1 text-lg font-semibold uppercase tracking-wide transition">
               <NavLink to="/ourservices" className={navStyle}>
                 Our Services
+              </NavLink>
+            </li>
+
+            {/* TAMBAHAN MENU OUR PRODUCT DESKTOP */}
+            <li className="pb-1 text-lg font-semibold uppercase tracking-wide transition">
+              <NavLink to="/ourproduct" className={navStyle}>
+                Our Product
               </NavLink>
             </li>
 
@@ -81,7 +87,7 @@ function Navbar({ navShow, setNavShow }) {
 
       {/* MOBILE MENU */}
       <div
-        className={`fixed top-[80px] right-0 h-screen w-[80vw] bg-white z-40 transform transition-transform duration-500 ${navShow ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-[84px] right-0 h-screen w-[80vw] bg-white z-40 transform transition-transform duration-500 ${navShow ? "translate-x-0" : "translate-x-full"
           }`}
       >
         <ul className="py-6 px-6">
@@ -106,7 +112,6 @@ function Navbar({ navShow, setNavShow }) {
             </NavLink>
           </li>
 
-          {/* TAMBAHAN MENU OUR SERVICES MOBILE */}
           <li className="my-6 text-right text-xl font-semibold">
             <NavLink
               to="/ourservices"
@@ -114,6 +119,17 @@ function Navbar({ navShow, setNavShow }) {
               className={navStyleMobile}
             >
               Our Services
+            </NavLink>
+          </li>
+
+          {/* TAMBAHAN MENU OUR PRODUCT MOBILE */}
+          <li className="my-6 text-right text-xl font-semibold">
+            <NavLink
+              to="/ourproduct"
+              onClick={handleNav}
+              className={navStyleMobile}
+            >
+              Our Product
             </NavLink>
           </li>
 

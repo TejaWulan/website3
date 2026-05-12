@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import Poster1 from "../../assets/img/company/Picturehome2.jpg";
+import Poster1 from "../../assets/img/company/companyinformation2.png";
 import { Link } from "react-router-dom";
 
 function CompanyInfo() {
@@ -23,7 +23,6 @@ function CompanyInfo() {
   return (
     <section
       ref={ref}
-      // px disesuaikan agar space kiri-kanan lebih lega di layar besar
       className="bg-white mt-16 md:mt-0 py-12 md:py-24 px-6 sm:px-12 md:px-20 lg:px-32 overflow-hidden"
     >
       <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16 lg:gap-24 max-w-7xl mx-auto">
@@ -33,14 +32,12 @@ function CompanyInfo() {
           className={`relative w-full md:w-5/12 flex justify-center transition-all duration-1000 ease-out
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}
         >
-          {/* max-w dipasang agar gambar tidak terlalu raksasa */}
           <div className="relative w-[80%] sm:w-[60%] md:w-full max-w-[320px] lg:max-w-[380px]">
             <img
               src={Poster1}
               alt="Company Information"
               className="rounded-2xl w-full h-auto object-cover relative z-10 shadow-xl"
             />
-
             {/* BORDER DEKORASI */}
             <div
               className="absolute -right-3 -bottom-3 md:-right-5 md:-bottom-5 w-full h-full border-2 md:border-[3px] rounded-2xl -z-0"
@@ -62,26 +59,24 @@ function CompanyInfo() {
           </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#2f2f2f] leading-[1.2] mb-6">
-            PT Milenial Sukses Coalindo
+            Reliable Coal Trading Partner <br className="hidden lg:block" /> for Domestic Industry
           </h2>
 
           <div className="text-gray-600 mb-8 space-y-4 leading-relaxed text-[15px] md:text-base">
-            <p>
-              <strong className="text-[#424651] font-bold text-lg">
-                Reliable Coal Trading Partner for Domestic Industry.
-              </strong>
+            <p className="font-medium">
+              <strong className="text-[#424651] font-bold text-lg">PT Milenial Sukses Coalindo</strong> adalah perusahaan perdagangan batubara yang berfokus pada pemenuhan kebutuhan energi untuk sektor industri dan pembangkit listrik di Indonesia.
             </p>
             <p className="font-medium">
-              Kami merupakan perusahaan yang bergerak di bidang perdagangan batubara dan jasa shipping broker dengan komitmen menyediakan pasokan yang stabil, kompetitif, dan tepat waktu.
+              Dengan dukungan jaringan supplier serta fasilitas logistik yang terintegrasi melalui kemitraan strategis, kami berkomitmen menyediakan pasokan batubara yang stabil, kompetitif, dan tepat waktu bagi pelanggan domestik.
             </p>
           </div>
 
           {/* LIST FEATURES */}
           <div className="flex flex-col gap-4 mb-10">
             {[
-              "Pasokan batubara berkualitas & harga kompetitif",
-              "Fokus kebutuhan industri domestik",
-              "Layanan logistik terintegrasi"
+              "Kualitas batubara terjaga dengan harga kompetitif",
+              "Fokus pada kebutuhan pasar domestik Indonesia",
+              "Didukung sistem distribusi dan pengiriman yang efisien"
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3 group">
                 <div className="mt-1 bg-[#e67e22] text-white rounded-full min-w-[20px] h-[20px] flex items-center justify-center text-[10px] flex-shrink-0 shadow-md">
