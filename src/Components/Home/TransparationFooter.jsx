@@ -5,7 +5,6 @@ export default function HeroSection() {
     return (
         <div
             style={{
-                // Gradasi diperpendek agar transisi warna lebih fokus di area teks
                 backgroundImage: `
                   linear-gradient(
                     to bottom,
@@ -18,10 +17,8 @@ export default function HeroSection() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
 
-                // --- PERUBAHAN UTAMA: Membuat Section Lebih Pendek ---
-                minHeight: "300px", // Tinggi minimal dikurangi agar tidak terlalu tegak
-                height: "45vh",     // Hanya mengambil 45% tinggi layar (sebelumnya 80vh)
-                // -----------------------------------------------------
+                minHeight: "300px", // Tinggi 
+                height: "45vh",     // Hanya mengambil 45% tinggi layar 
 
                 display: "flex",
                 alignItems: "center",
@@ -30,7 +27,7 @@ export default function HeroSection() {
                 textAlign: "center",
                 flexDirection: "column",
                 fontFamily: "'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-                padding: "20px", // Padding disederhanakan
+                padding: "20px", 
                 position: "relative",
                 overflow: "hidden"
             }}
@@ -58,8 +55,8 @@ export default function HeroSection() {
                     letterSpacing: "-0.5px",
                     textShadow: "0px 2px 8px rgba(0,0,0,0.5)"
                 }}>
-                    Reliable Source, Coordinated Shipment <br className="hidden md:block" />
-                    Committed Partnership
+                    Driven by Youth,  Strong Commitment <br className="hidden md:block" />
+                    Build by Trust and Best Performance
                 </h1>
             </div>
         </div>

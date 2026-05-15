@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/website3/static/css/main.1de639fc.css",
-    "main.js": "/website3/static/js/main.a6e17918.js",
+    "main.css": "/website3/static/css/main.5575087d.css",
+    "main.js": "/website3/static/js/main.affff17a.js",
+    "static/media/truck2.png": "/website3/static/media/truck2.7948599250d6f6930bc1.png",
     "static/media/ourservices.png": "/website3/static/media/ourservices.cffc299ae84f11af24c9.png",
     "static/media/aboutus.png": "/website3/static/media/aboutus.bd00b15891fd0ed299fb.png",
     "static/media/companyinformation2.png": "/website3/static/media/companyinformation2.f9066b1bd64da16500bd.png",
@@ -10,20 +11,26 @@
     "static/media/coaldistribution.jpg": "/website3/static/media/coaldistribution.92cf0a42acd21c084c46.jpg",
     "static/media/2critical-minerals-zambia-mining.jpg": "/website3/static/media/2critical-minerals-zambia-mining.375093639026a2ee4cee.jpg",
     "static/media/bulat_banner.png": "/website3/static/media/bulat_banner.509c143199b360e608b6.png",
+    "static/media/coalsegiempat3.png": "/website3/static/media/coalsegiempat3.b55d079508a90d93b1cd.png",
     "static/media/coalfactory.png": "/website3/static/media/coalfactory.73d92cc17dc95e4a94c6.png",
+    "static/media/coalsegiempat1.png": "/website3/static/media/coalsegiempat1.9432bbaaccdf45d59788.png",
     "static/media/samora_gropu-oc.png": "/website3/static/media/samora_gropu-oc.42c293aed329b3294f8b.png",
+    "static/media/coalsegiempat2.png": "/website3/static/media/coalsegiempat2.c78a7d4dc449ecca245e.png",
     "static/media/coaldistribution3.jpg": "/website3/static/media/coaldistribution3.dab959524ad6834bfc3e.jpg",
     "static/media/qualitycontrol.png": "/website3/static/media/qualitycontrol.88ea4d0fb87eac7f8020.png",
     "static/media/salam.png": "/website3/static/media/salam.59a6941ca9843452b730.png",
-    "static/media/1247700294.jpg": "/website3/static/media/1247700294.170ca4f5363fc5914798.jpg",
     "static/media/SADIYAH-OP.png": "/website3/static/media/SADIYAH-OP.b9c3fa40286dacc3047b.png",
     "static/media/networking.png": "/website3/static/media/networking.414f1d5d95499e0a5186.png",
     "static/media/SSLG-OP2.png": "/website3/static/media/SSLG-OP2.15f32ebca196f9efdafb.png",
-    "static/media/logo_batu_bara.png": "/website3/static/media/logo_batu_bara.5039748fe17e65a866d9.png",
+    "static/media/logo_batu_bara.png": "/website3/static/media/logo_batu_bara.f563fd3f3bde6d9c3d1f.png",
     "static/media/kapal.png": "/website3/static/media/kapal.ba06f4076120c881fb95.png",
+    "static/media/coal4.png": "/website3/static/media/coal4.09d5e46db767b6098115.png",
+    "static/media/coal2.png": "/website3/static/media/coal2.e28c580aa4e78f16906e.png",
     "static/media/Asset 4@2x 1.webp": "/website3/static/media/Asset 4@2x 1.535b002fdad8272518bc.webp",
     "static/media/kaldera2.png": "/website3/static/media/kaldera2.047e73a5538478372415.png",
     "static/media/truckdanbatubara.jpg": "/website3/static/media/truckdanbatubara.9164b4567572f72fca59.jpg",
+    "static/media/coal1.png": "/website3/static/media/coal1.4eeb560b97efecf5edf1.png",
+    "static/media/coal3.png": "/website3/static/media/coal3.30ea214c4ed548809a92.png",
     "static/media/PT_Virema_Impex-OP.png": "/website3/static/media/PT_Virema_Impex-OP.989ae4d9ffcadf038759.png",
     "static/media/APPSINARMAS-OC2.png": "/website3/static/media/APPSINARMAS-OC2.be00ef07e892445228f9.png",
     "static/media/BAI-OC.png-removebg-preview.png": "/website3/static/media/BAI-OC.png-removebg-preview.652aa5755a86ed3affac.png",
@@ -33,11 +40,11 @@
     "static/media/batubaradankapal.jpg": "/website3/static/media/batubaradankapal.44f35531cba0a6d74b56.jpg",
     "static/media/rekind.png": "/website3/static/media/rekind.7edc5edd6dd0aa351e9f.png",
     "index.html": "/website3/index.html",
-    "main.1de639fc.css.map": "/website3/static/css/main.1de639fc.css.map",
-    "main.a6e17918.js.map": "/website3/static/js/main.a6e17918.js.map"
+    "main.5575087d.css.map": "/website3/static/css/main.5575087d.css.map",
+    "main.affff17a.js.map": "/website3/static/js/main.affff17a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1de639fc.css",
-    "static/js/main.a6e17918.js"
+    "static/css/main.5575087d.css",
+    "static/js/main.affff17a.js"
   ]
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import Poster1 from "../../assets/img/company/1247700294.jpg";
+import Poster1 from "../../assets/img/company/truck2.png";
 
 function AboutCompany() {
   const [isVisible, setIsVisible] = useState(false);
