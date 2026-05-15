@@ -47,7 +47,7 @@ export default function HeroSection() {
 
                 {/* Slogan Utama */}
                 <h1 style={{
-                    fontSize: "clamp(18px, 4vw, 36px)", // Ukuran font diperkecil sedikit agar proporsional dengan tinggi baru
+                    fontSize: "clamp(18px, 4vw, 36px)", 
                     fontWeight: "900",
                     lineHeight: "1.3",
                     margin: "0 auto",

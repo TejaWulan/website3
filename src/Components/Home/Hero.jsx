@@ -49,12 +49,10 @@ function Hero() {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 z-10"></div>
 
-      {/* CONTENT - Diubah ke items-end dan tambah padding bottom agar di kiri bawah */}
       <div className="relative z-20 h-full flex items-end px-6 md:px-24 pb-20 md:pb-32">
 
         <div className="flex items-center gap-4 md:gap-6 max-w-[900px]">
 
-          {/* BULAT - Menggunakan Image4 yang sudah dibuat transparan tadi */}
           <img
             src={Image4}
             alt="decoration"
@@ -75,7 +73,6 @@ function Hero() {
               key={current + "desc"}
               className="mt-3 text-[14px] md:text-[22px] transition-all duration-700"
             >
-              {/* Box Deskripsi dengan transparansi abu-abu mika */}
               <span className="bg-[#424651]/70 backdrop-blur-sm text-white px-4 py-2 rounded-sm border-l-4 border-[#e67e22]">
                 {slides[current].desc}
               </span>

@@ -13,7 +13,7 @@ const Services = () => {
       ([entry]) => {
         if (entry.isIntersecting) setIsVisible(true);
       },
-      { threshold: 0.1 } // Animasi mulai saat 10% section terlihat
+      { threshold: 0.1 } 
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);
