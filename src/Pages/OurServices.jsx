@@ -8,7 +8,6 @@ import Services from "../Components/OurServices/OurServices";
 function OurServices() {
   return (
     <>
-      {/* <Hero /> */}
       <Coal />
       <Services/>
       <MapCoal />

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Poster1 from "../../assets/img/ourservices/ourservices.png";
 
-function Coal() {
+function CoalSupply() {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef();
 
@@ -22,11 +22,10 @@ function Coal() {
   return (
     <section
       ref={ref}
-      className="bg-white mt-16 md:mt-0 py-16 md:py-24 px-6 sm:px-10 md:px-20 lg:px-32 overflow-hidden"
+      className="bg-white mt-20 md:mt-16 py-16 md:py-24 px-6 sm:px-10 md:px-20 lg:px-32 overflow-hidden"
     >
       <div className="flex flex-col md:flex-row items-stretch gap-12 md:gap-16 lg:gap-24 max-w-7xl mx-auto">
 
-        {/* IMAGE SECTION - Sejajar Atas Bawah dengan Teks */}
         <div 
           className={`relative w-full md:w-5/12 flex transition-all duration-1000 ease-out
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}
@@ -35,7 +34,6 @@ function Coal() {
             <img
               src={Poster1}
               alt="Coal Supply & Distribution"
-              // object-cover memastikan gambar memenuhi area tanpa distorsi agar sejajar teks
               className="rounded-2xl w-full h-full object-cover relative z-10 shadow-xl"
             />
 
@@ -64,7 +62,6 @@ function Coal() {
             Coal Supply & <br className="hidden md:block" /> Distribution
           </h2>
 
-          {/* Deskripsi Teks */}
           <div className="text-gray-600 space-y-6 leading-relaxed text-[15px] md:text-lg font-medium">
             <p>
               Kami berfokus pada penyediaan solusi perdagangan batubara yang terintegrasi, dengan mengutamakan kebutuhan pelanggan sebagai prioritas utama dalam setiap transaksi.
@@ -73,8 +70,6 @@ function Coal() {
               Dengan dukungan jaringan supplier dan sistem distribusi yang terintegrasi, <strong className="text-[#424651] font-extrabold">PT Milenial Sukses Coalindo</strong> memastikan proses pengadaan dan pengiriman batubara berjalan secara efisien, tepat waktu, dan dapat diandalkan.
             </p>
           </div>
-          
-          {/* Garis orange di bawah sudah dihapus sesuai permintaan */}
         </div>
 
       </div>
@@ -82,4 +77,4 @@ function Coal() {
   );
 }
 
-export default Coal;
+export default CoalSupply;

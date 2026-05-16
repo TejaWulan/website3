@@ -11,10 +11,8 @@ function CoalDeliveryProcess() {
     >
       <div 
         style={{
-          // KONTROL LEBAR: Diperkecil dari 1200px ke 1000px agar gambar tidak terlalu raksasa
           maxWidth: '1000px', 
           margin: '0 auto', 
-          // Space kiri kanan agar tidak mentok layar (terutama di mobile)
           padding: '0 1.5rem', 
         }}
       >
@@ -24,10 +22,9 @@ function CoalDeliveryProcess() {
           style={{
             width: '100%',
             overflow: 'hidden',
-            borderRadius: '1rem', // Membuat sudut lebih halus
+            borderRadius: '1rem', 
             boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
             backgroundColor: 'white',
-            // Memberikan padding putih di sekeliling gambar agar terlihat seperti bingkai
             padding: '1.5rem', 
           }}
         >
@@ -38,13 +35,11 @@ function CoalDeliveryProcess() {
               width: '100%',
               height: 'auto',
               display: 'block',
-              // Menambahkan transisi halus jika ada perubahan ukuran layar
               transition: 'all 0.3s ease-in-out',
             }}
           />
         </div>
 
-        {/* Optional: Caption singkat di bawah gambar */}
         <p style={{ 
           textAlign: 'center', 
           marginTop: '1.5rem', 
