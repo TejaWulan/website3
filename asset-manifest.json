@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website3/static/css/main.dc8f44fc.css",
-    "main.js": "/website3/static/js/main.801b6dc5.js",
+    "main.js": "/website3/static/js/main.0e2c39bf.js",
     "static/media/batubara_papan.png": "/website3/static/media/batubara_papan.6c35779123e619d430fb.png",
     "static/media/batubara_kapal.png": "/website3/static/media/batubara_kapal.f50a883a5b084a0b1b00.png",
     "static/media/footer2.jpg": "/website3/static/media/footer2.f5075d52f7455ccef8f1.jpg",
@@ -41,10 +41,10 @@
     "static/media/rekind.png": "/website3/static/media/rekind.7edc5edd6dd0aa351e9f.png",
     "index.html": "/website3/index.html",
     "main.dc8f44fc.css.map": "/website3/static/css/main.dc8f44fc.css.map",
-    "main.801b6dc5.js.map": "/website3/static/js/main.801b6dc5.js.map"
+    "main.0e2c39bf.js.map": "/website3/static/js/main.0e2c39bf.js.map"
   },
   "entrypoints": [
     "static/css/main.dc8f44fc.css",
-    "static/js/main.801b6dc5.js"
+    "static/js/main.0e2c39bf.js"
   ]
 }
