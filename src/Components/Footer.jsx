@@ -7,11 +7,10 @@ function Footer() {
 
   return (
     <footer>
-      {/* SECTION UTAMA - Diperpendek dengan py-10 (sebelumnya py-16) */}
+
       <div className="bg-[#7a7a7a] text-white px-6 md:px-20 lg:px-32 py-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-10 md:gap-16">
-          
-          {/* LEFT - LOGO (Ukuran disesuaikan) */}
+
           <div className="flex flex-col items-start">
             <img src={Logo} alt="PT. Milenial Logo" className="w-[180px] md:w-[200px] h-auto mb-2" />
           </div>
@@ -27,45 +26,43 @@ function Footer() {
           </div>
 
           {/* RIGHT - CONTACT & ICONS */}
-          <div className="flex flex-col gap-3 min-w-[220px]">
-            <div className="flex gap-4 items-center">
-              <span className="font-bold min-w-[80px]">WhatsApp.</span>
+          {/* RIGHT - CONTACT & ICONS */}
+          <div className="flex flex-col gap-3 min-w-[250px]">
+
+            {/* WhatsApp Row */}
+            <div className="flex items-center">
+              <span className="font-bold w-[95px] inline-block">WhatsApp.</span>
               <span className="font-semibold text-white">0821-8888-2201</span>
             </div>
 
-            <div className="flex gap-4 items-center">
-              <span className="font-bold min-w-[80px]">Email.</span>
+            {/* Email Row */}
+            <div className="flex items-center">
+              <span className="font-bold w-[95px] inline-block">Email.</span>
               <span className="font-semibold text-white lowercase">cs.msc@outlook.com</span>
             </div>
 
-            {/* ICONS - Menggunakan React Icons untuk tampilan jelas */}
+            {/* ICONS */}
             <div className="flex gap-4 mt-2">
-              {/* WhatsApp Icon */}
-              <a 
-                href={`https://wa.me/62${phoneNumber.substring(1)}`} 
-                target="_blank" 
+              <a
+                href={`https://wa.me/62${phoneNumber.substring(1)}`}
+                target="_blank"
                 rel="noopener noreferrer"
-                title="Chat via WhatsApp"
                 className="w-9 h-9 flex items-center justify-center border border-white rounded-full hover:bg-[#25D366] hover:border-[#25D366] transition-all duration-300"
               >
                 <FaWhatsapp className="text-xl" />
               </a>
 
-              {/* Instagram Icon */}
-              <a 
-                href="https://www.instagram.com/pt.msc" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/pt.msc"
+                target="_blank"
                 rel="noopener noreferrer"
-                title="Follow Instagram"
                 className="w-9 h-9 flex items-center justify-center border border-white rounded-full hover:bg-[#E1306C] hover:border-[#E1306C] transition-all duration-300"
               >
                 <FaInstagram className="text-xl" />
               </a>
 
-              {/* Email Icon */}
-              <a 
-                href="mailto:cs.msc@outlook.com" 
-                title="Send Email"
+              <a
+                href="mailto:cs.msc@outlook.com"
                 className="w-9 h-9 flex items-center justify-center border border-white rounded-full hover:bg-blue-500 hover:border-blue-500 transition-all duration-300"
               >
                 <FaEnvelope className="text-lg" />

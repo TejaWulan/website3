@@ -1,7 +1,7 @@
 import React from "react";
 import { GiCargoShip, GiShipWheel } from "react-icons/gi"; 
-import gambarBarge from "../../assets/img/ourproduct/batubaraandpapan.jpg"; 
-import gambarVessel from "../../assets/img/ourproduct/batubaradankapal.jpg"; 
+import gambarVessel from "../../assets/img/ourproduct/batubara_papan.png"; 
+import gambarBarge from "../../assets/img/ourproduct/batubara_kapal.png"; 
 
 const OrderQuantity = () => {
   return (

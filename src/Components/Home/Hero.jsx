@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Image1 from "../../assets/img/company/truckdanbatubara.jpg";
+import Image1 from "../../assets/img/company/pexels-inayatullah-23540605.jpg";
 import Image2 from "../../assets/img/company/coalfactory.png";
 import Image3 from "../../assets/img/company/coaldistribution.jpg";
 import Image4 from "../../assets/img/elements/bulat_banner.png";
@@ -11,12 +11,12 @@ const slides = [
     desc: "Reliable Source",
   },
   {
-    image: Image2,
+    image: Image3,
     title: "PT Milenial Sukses Coalindo",
     desc: "Coordinated Shipment",
   },
   {
-    image: Image3,
+    image: Image2,
     title: "PT Milenial Sukses Coalindo",
     desc: "Committed Partnership",
   },

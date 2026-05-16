@@ -36,12 +36,12 @@ const Services = () => {
     },
     {
       title: "Integrated Shipping Support",
-      description: "Didukung oleh jaringan mitra tugboat dan barge, kami menyediakan layanan shipping broker untuk memastikan proses pengiriman berjalan efisien dan sesuai jadwal.",
+      description: "Didukung oleh kemitraan logistik dan fasilitas pengiriman yang terkoordinasi, kami memastikan proses distribusi berjalan lebih efisien, aman, dan tepat waktu.",
       icon: gambar3,
     },
     {
       title: "Flexible Commercial Approach",
-      description: "Adding value to our services, we can provide a payment term for our coal dedicated only for our loyal customers.",
+      description: "Kami percaya bahwa hubungan jangka panjang dibangun melalui kepercayaan, komunikasi yang baik, dan komitmen dalam memberikan pelayanan terbaik bagi setiap pelanggan.",
       icon: gambar4,
     },
   ];

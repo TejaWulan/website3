@@ -1,6 +1,5 @@
 import React from "react";
-// Import gambar sesuai instruksi Anda
-import gambar4 from "../../assets/img/ourproduct/2critical-minerals-zambia-mining.jpg";
+import gambar4 from "../../assets/img/ourproduct/truckkeruk.jpg";
 
 const ProductHeader = () => {
   return (

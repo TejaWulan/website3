@@ -8,7 +8,7 @@ import Rekind from "../../assets/img/home/rekind.png";
 
 function Client() {
   const data = [
-    { img: Sinarmas, title: "PT APP SINARMAS" },
+    { img: Sinarmas, title: "APP GROUP (SINARMAS)" },
     { img: BAI, title: "PT BORNEO AlUMINA INDONESIA" },
     { img: BAP, title: "PT BORNEO ALUMINDO PRIMA" },
     { img: SAMORA, title: "SAMORA GROUP" },

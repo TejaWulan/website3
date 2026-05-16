@@ -11,7 +11,7 @@ import Sadiyah from "../../assets/img/home/SADIYAH-OP.png";
 
 function Partner() {
   const data = [
-    { img: Kaldera, title: "PT KALDERA COAL SUPPLIER" },
+    { img: Kaldera, title: "PT KALDERA ENERGI NUSANTARA" },
    /// { img: OSRAM, title: "PT OSRAM MANDIRI SEJAHTERA" },
     { img: HBT, title: "PT HASYIM BARA TAMA" },
     { img: Virema, title: "PT VIREMA IMPEX" },

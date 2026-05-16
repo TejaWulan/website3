@@ -1,5 +1,5 @@
 import React from "react";
-import Image3 from "../../assets/img/company/coaldistribution3.jpg";
+import Image3 from "../../assets/img/company/footer2.jpg";
 
 export default function HeroSection() {
     return (
@@ -27,7 +27,7 @@ export default function HeroSection() {
                 textAlign: "center",
                 flexDirection: "column",
                 fontFamily: "'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-                padding: "20px", 
+                padding: "20px",
                 position: "relative",
                 overflow: "hidden"
             }}
@@ -35,19 +35,20 @@ export default function HeroSection() {
             <div style={{ maxWidth: "1200px", margin: "0 auto", width: "100%" }}>
                 {/* Nama PT */}
                 <h4 style={{
-                    color: "#e67e22",
+                    color: "#FFFAFA",
                     fontSize: "clamp(11px, 2.5vw, 14px)",
                     fontWeight: "800",
                     letterSpacing: "2px",
                     marginBottom: "8px",
-                    textTransform: "uppercase"
+                    textTransform: "uppercase",
+                    textShadow: '2px 2px 4px orange'
                 }}>
                     PT MILENIAL SUKSES COALINDO
                 </h4>
 
                 {/* Slogan Utama */}
                 <h1 style={{
-                    fontSize: "clamp(18px, 4vw, 36px)", 
+                    fontSize: "clamp(18px, 4vw, 36px)",
                     fontWeight: "900",
                     lineHeight: "1.3",
                     margin: "0 auto",

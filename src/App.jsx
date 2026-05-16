@@ -1,5 +1,5 @@
 import "./App.css";
-import { HashRouter , Routes, Route } from "react-router-dom";
+import { BrowserRouter , Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Layout from "./Pages/Layout";
 import OurServices from "./Pages/OurServices";
@@ -8,7 +8,7 @@ import OurProduct from "./Pages/OurProduct";
 
 function App() {
   return (
-    <HashRouter >
+    <BrowserRouter basename="/website3">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -17,7 +17,7 @@ function App() {
            <Route path="/ourproduct" element={<OurProduct />} />
         </Route>
       </Routes>
-    </HashRouter >
+    </BrowserRouter >
   );
 }
 
